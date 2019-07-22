@@ -1,0 +1,21 @@
+footer {
+  background: #eee;
+  padding: 25px 0;
+  span.disclaimer {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #8b8b8b;
+    margin-bottom: 0;
+  }
+  .footer-links {
+    float: right;
+    a {
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      color: #323232;
+      text-transform: uppercase;
+      margin-left: 15px;
+    }
+  }
+}

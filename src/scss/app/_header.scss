@@ -33,6 +33,9 @@ header {
           img {
             width: 25px;
             height: 25px;
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
         .menu-list {
@@ -71,6 +74,9 @@ header {
         justify-content: center;
         align-items: center;
         background: #fd4f32;
+        &:hover {
+          cursor: pointer;
+        }
         span {
           font-family: "Open Sans", sans-serif;
           font-size: 16px;

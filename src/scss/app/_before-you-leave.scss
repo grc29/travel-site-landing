@@ -1,0 +1,84 @@
+section#before-you-leave {
+  background: #fff;
+  padding: 80px 0;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(231, 231, 231, 1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(231, 231, 231, 1);
+  box-shadow: 0px 3px 0px 0px rgba(231, 231, 231, 1);
+  .container {
+    h3.section-title {
+      font-family: "Open Sans", sans-serif;
+      font-size: 52px;
+      font-weight: 300;
+      color: #323232;
+      margin-bottom: 65px;
+    }
+    .tips-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 70px;
+      .column {
+        margin-right: 50px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        h4.column-title {
+          font-family: "Montserrat", sans-serif;
+          font-size: 16px;
+          color: #323232;
+          margin-bottom: 15px;
+          text-transform: uppercase;
+        }
+        p.column-text {
+          font-family: "Open Sans", sans-serif;
+          font-size: 15px;
+          color: #8b8b8b;
+          margin-bottom: 0;
+        }
+      }
+    }
+    h4.email-header {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      color: #323232;
+      margin-bottom: 25px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .subscribe-container {
+      width: 475px;
+      height: 40px;
+      display: flex;
+      margin: 0 auto;
+      input {
+        background: #eee;
+        width: 325px;
+        padding: 10px;
+        border: none;
+        &::placeholder {
+          font-family: "Open Sans", sans-serif;
+          font-size: 16px;
+          color: #8b8b8b;
+        }
+      }
+      .subscribe-btn {
+        background: #fd4f32;
+        width: 150px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          cursor: pointer;
+        }
+        span {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 700;
+          font-size: 16px;
+          color: #fff;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
