@@ -3,86 +3,114 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 25px 0 205px;
+  max-width: 480px;
+  width: 100%;
+  height: 100vh;
   .container {
+    display: flex;
+    flex-direction: column;
     .top-row {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin: 0 0 220px;
-
+      padding: 5% 10% 0;
       .logo {
         display: inline-block;
         img {
           width: 25px;
           height: 25px;
-          margin-right: 15px;
-          margin-bottom: 10px;
-        }
-        span {
-          font-family: "Open Sans", sans-serif;
-          font-weight: 300;
-          color: #f4f3ee;
-          font-size: 32px;
         }
       }
+    }
+  }
+}
 
-      .menu {
-        display: inline-block;
-        .menu-icon {
+@media screen and (min-width: 1200px) {
+  header {
+    background: url("/images/header-background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px 0 205px;
+    .container {
+      .top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 220px;
+
+        .logo {
+          display: inline-block;
           img {
             width: 25px;
             height: 25px;
-            &:hover {
-              cursor: pointer;
-            }
+            margin-right: 15px;
+            margin-bottom: 10px;
+          }
+          span {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            color: #f4f3ee;
+            font-size: 32px;
           }
         }
-        .menu-list {
-          display: none;
-        }
-      }
-    }
-    h2.header-text {
-      font-family: "Open Sans", sans-serif;
-      font-size: 52px;
-      font-weight: 300;
-      color: #fff;
-      margin-bottom: 25px;
-      text-align: center;
-    }
-    .search-container {
-      width: 450px;
-      height: 40px;
-      display: flex;
-      margin: 0 auto;
-      input {
-        width: 325px;
-        padding: 10px;
-        border: none;
-        &::placeholder {
-          font-family: "Open Sans", sans-serif;
-          font-size: 16px;
-          color: #8b8b8b;
-        }
-      }
 
-      .go-btn {
-        width: 125px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #fd4f32;
-        &:hover {
-          cursor: pointer;
+        .menu {
+          display: inline-block;
+          .menu-icon {
+            img {
+              width: 25px;
+              height: 25px;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+          .menu-list {
+            display: none;
+          }
         }
-        span {
-          font-family: "Open Sans", sans-serif;
-          font-size: 16px;
-          font-weight: 700;
-          color: #fff;
-          text-transform: uppercase;
+      }
+      h2.header-text {
+        font-family: "Open Sans", sans-serif;
+        font-size: 52px;
+        font-weight: 300;
+        color: #fff;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      .search-container {
+        width: 450px;
+        height: 40px;
+        display: flex;
+        margin: 0 auto;
+        input {
+          width: 325px;
+          padding: 10px;
+          border: none;
+          &::placeholder {
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            color: #8b8b8b;
+          }
+        }
+
+        .go-btn {
+          width: 125px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #fd4f32;
+          &:hover {
+            cursor: pointer;
+          }
+          span {
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+          }
         }
       }
     }
